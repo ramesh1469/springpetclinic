@@ -9,7 +9,7 @@ pipeline {
         }
         stage (build)  {
             steps {
-                sh 'docker info'
+                sh 'sudo apt update && docker info'
             }
 
         }
