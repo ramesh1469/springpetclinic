@@ -1,0 +1,17 @@
+pipeline {
+    agent {label 'docker'}
+    stages {
+        stage  {
+            steps {
+                git branch :    ,url:
+            }
+
+        }
+        stage  {
+            steps {
+                sh docker info'
+            }
+
+        }
+    }
+}
